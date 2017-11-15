@@ -6,11 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        *>a:visited {
+        a:visited {
             color: white;
         }
 
         body {
+            margin-top: -25px;
+            margin-left: 30px;
+            margin-right: 60px;
             background-image: url('assets/img/pozadi.jpg');
             background-repeat: repeat-x;
             background-color: #a6bf7d;
@@ -18,17 +21,38 @@
 
         header {
             background-image: url('assets/img/hlavicka.jpg');
-            width: 718px;
-            height: 250px;
+            background-repeat: no-repeat;
+            height: 350px;
+            background-size: 100%;
         }
 
-        ul {
-            border: 3px solid white;
+        .hero {
+            color: #fff;
+            font-size: 25px;
+            padding-left: 50px;
+            padding-top: 100px;
+            line-height: 35px;  
+        }
+
+        .hero > a {
+            text-decoration: none;
+            color: blue;
+            font-size: 20px;
+        }
+
+        nav {
+            padding-left: 1.7px;
+        }
+
+        nav > ul {
+            margin: 0;
+            padding: 5px;
+            border: 5px solid white;
         }
 
         nav > ul > li {
             display: inline;
-            padding-right: 50px;
+            padding-left: 50px;
         }
 
         nav > ul > li > a {
@@ -39,16 +63,75 @@
         nav > ul > li > a:hover {
             text-decoration: underline;
         }
+
+        .wrapper {
+            margin-left: 1.7px;
+            border: 1px solid #fff;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            background-color: #fff;
+        }
+
+        .container {
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            margin: 0 4px 3px 4px;
+            background: #e3e5db;
+            padding: 10px 10px;
+            display: flex;
+        }
+        
+        .left {
+            flex: 0 0 65%;
+        }
+
+        .left>.text {
+            padding: 15px 20px;
+        }
+
+        .left>.text>.row {
+            display: flex;
+        }
+
+        .left>.text>.row>.col-3 {
+            flex: 0 0 25%;
+        }
+
+        .right {
+            border-left: 3px solid white;
+        }
+
+        .text {
+            margin-top: -25px;
+            padding-left: 20px;
+        }
+
+        .right>.text>h1 {
+            color: #a6bf7d;
+            text-align: center;
+        }
+
+        .right>.text>h3>a {
+            color: orange;
+        }
+
+        footer {
+            padding-top: 6px;
+            font-size: 15px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     
     <header>
-        <h1>nadpis</h1>
+        <h1>charitable organization</h1>
         <div class="hero">
             Make a DONATION today
+            <br>
             and help 2000 children !
-            <a href="#"><i class="fa fa-archor-left" aria-hidden="true"></i> donaiton now</a>
+            <br>
+            <a href="">Make a donation now !</a>
         </div>
     </header>
 
@@ -64,8 +147,45 @@
     </nav>
 
     <div class="wrapper">
-        
+        <div class="container">
+            <div class="left">
+                <div class="text">
+                        <h1>Welcome to our organization</h1>
+                        <p>Ut irure sint adipisicing ut cillum id qui id sit sint culpa cillum consectetur.<br>Ut irure sint adipisicing ut cillum id qui id sit sint culpa cillum consectetur.</p>
+                        <h1>Photos</h1>
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="" alt="">
+                            </div>
+                            <div class="col-3">
+                                <img src="" alt="">
+                            </div>
+                            <div class="col-3">
+                                <img src="" alt="">
+                            </div>
+                            <div class="col-3">
+                                <img src="" alt="">
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="text">
+                        <h1>Latest News</h1>
+                        <h3><a href="">Just Web Templates</a></h3>
+                        <p>Sunt excepteur exercitation proident nostrud ipsum id.Ullamco amet ea non id amet reprehenderit.Reprehenderit ipsum mollit tempor ad.</p>
+                        <h3><a href="">Template Beauty</a></h3>
+                        <p>Sunt excepteur exercitation proident nostrud ipsum id.Ullamco amet ea non id amet reprehenderit.Reprehenderit ipsum mollit tempor ad.</p>
+                        <h3><a href="">The Forum</a></h3>
+                        <p>Sunt excepteur exercitation proident nostrud ipsum id.Ullamco amet ea non id amet reprehenderit.Reprehenderit ipsum mollit tempor ad.</p>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <footer>
+        Copyright &copy 2007
+    </footer>
 
 </body>
 </html>
