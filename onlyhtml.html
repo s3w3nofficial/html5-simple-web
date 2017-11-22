@@ -10,15 +10,52 @@
             background-image: url('assets/img/pozadi.jpg');
             background-repeat: repeat-x;
             background-color: #a6bf7d;
+            padding: 0 25px;
 
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        h1 {
+            font-weight: normal;
         }
 
         header {
             background-image: url('assets/img/hlavicka.jpg');
             background-repeat: no-repeat;
-            height: 350px;
+            height: 320px;
             background-size: 100%;
+        }
+
+        nav {
+            padding-left: 1.4px;
+            background-color: #85a157;
+        }
+
+        nav > ul {
+            margin: 0;
+            padding: 5px;
+            border: 5px solid white;
+            border-bottom: unset;
+        }
+
+        nav > ul > li {
+            display: inline;
+            padding-left: 50px;
+        }
+
+        nav > ul > li > a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav > ul > li > a:visited {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav > ul > li > a:hover {
+            color: white;
+            text-decoration: underline;
         }
 
         .wrapper {
@@ -27,6 +64,7 @@
             border-bottom-right-radius: 15px;
             background: #e3e5db;
             margin-left: 1.7px;
+            padding-bottom: 30px;
         }
 
         .container {
@@ -38,6 +76,14 @@
 
         .left {
             flex: 0 0 65%;
+        }
+
+        .left > .text {
+            padding: 0 30px;
+        }
+
+        .left > .text > h1 {
+            font-size: 20px;
         }
 
         .right {
@@ -61,8 +107,31 @@
             padding-left: 10px;
         }
 
+        .right > .text {
+            padding: 0 25px;
+        }
+
+        .right > .text > h1 {
+            font-size: 20px;
+            text-align: center;
+        }
+
         .text {
             font-size: 12px;
+        }
+
+        .photos {
+            text-transform: capitalize;
+        }
+
+        .photos > img {
+            padding-right: 15px;
+        }
+
+        footer {
+            padding-top: 6px;
+            text-align: center;
+            font-size: 14px;
         }
 
     </style>
@@ -71,6 +140,17 @@
     <header>
         
     </header>
+
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Who we are ?</a></li>
+            <li><a href="">Make a donation</a></li>
+            <li><a href="">Our work</a></li>
+            <li><a href="">News &amp; press</a></li>
+            <li><a href="">Contact us</a></li>    
+        </ul>
+    </nav>
 
     <div class="wrapper">
         <div class="container">
@@ -83,10 +163,10 @@
                     <p>This is a template designed by free website templates for you for free you can replace all the text by your own text.</p>
                     <div class="photos">
                         <h1>photos</h1>
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
+                        <img src="assets/img/1.jpg" alt="">
+                        <img src="assets/img/2.jpg" alt="">
+                        <img src="assets/img/3.jpg" alt="">
+                        <img src="assets/img/4.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -103,5 +183,9 @@
             </div>
         </div>
     </div>
+
+    <footer>
+        &copy Copyright
+    </footer>
 </body>
 </html>
